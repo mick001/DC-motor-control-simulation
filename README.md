@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+## DC-motor-control-simulation
 
-You can use the [editor on GitHub](https://github.com/mick001/DC-motor-control-simulation/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+A simulation of a control loop for a DC motor.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Two control strategies have been implemented through the use of a PI regulator:
 
-### Markdown
+1. Linear voltage control
+2. PWM control
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The files in this repository are the following:
 
-```markdown
-Syntax highlighted code block
+- DC_motor.slx which is the Simulink model of the DC motor
+- PWM.slx which is a simulink model for a PWM block (input=analogue voltage from 0 to 1 V, output=PWM signal to static switch)
+- State space system: motor parameter, state space system and step response
+- DC-motor-analogue-control.slx: Simulink model of a linear voltage control through a PI regulator
+- DC-motor-pwm-control.slx: Simulink model of a PWM control through a PI regulator
 
-# Header 1
-## Header 2
-### Header 3
+The regulator was tuned using the tuning utility in Matlab.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mick001/DC-motor-control-simulation/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![PWM control](https://user-images.githubusercontent.com/13961654/53666004-3df3cb00-3c6d-11e9-8f61-2fe56ec14dc8.png)
+![Linear voltage control](https://user-images.githubusercontent.com/13961654/53666006-3f24f800-3c6d-11e9-87f5-8113fb4e0dcb.png)
