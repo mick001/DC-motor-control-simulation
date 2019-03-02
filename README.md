@@ -1,4 +1,4 @@
-## DC motor control simulation
+## DC motor control simulation in Matlab and Simulink
 
 A simulation of a control loop for a DC motor.
 
