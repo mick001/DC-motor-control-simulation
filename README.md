@@ -24,5 +24,5 @@ The regulator was tuned with some overshoot using the tuning utility in Matlab.
 ### DC motor model implementation
 ![dc-motor](https://user-images.githubusercontent.com/13961654/53666767-4ea54080-3c6f-11e9-9af9-219a589f9025.png)
 
-#### Speed variation
+#### Speed variation [rad/s]
 ![speed-control-example](https://user-images.githubusercontent.com/13961654/53666772-52d15e00-3c6f-11e9-933a-781240180f96.png)
